@@ -48,13 +48,13 @@ export const projects = [
 
 export const githubActivity = [
     {
-        repo: 'https://github.com/Rashi003mp/jenogram',
+        repo: '/Rashi003mp/jenogram',
         commit: 'feat: Frontend Completed',
         time: '2 hours ago',
     },
     
     {
-        repo: 'https://github.com/Rashi003mp/MyPortfolio',
+        repo: '/Rashi003mp/MyPortfolio',
         commit: 'chore: Update dependencies and refactor layout',
         time: '3 days ago',
     },

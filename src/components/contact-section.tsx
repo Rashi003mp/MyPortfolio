@@ -11,17 +11,32 @@ import { Label } from '@/components/ui/label';
 import { useToast } from "@/hooks/use-toast";
 import { Send } from 'lucide-react';
 
+interface FormErrors {
+  name?: string[];
+  email?: string[];
+  message?: string[];
+}
+
+interface FormState {
+  message: string;
+  errors?: FormErrors;
+}
+
 function SubmitButton() {
     const { pending } = useFormStatus();
     return (
-        <Button type="submit" disabled={pending} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+        <Button 
+        type="submit" 
+        disabled={pending} 
+        size="lg" 
+        className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
             {pending ? 'Sending...' : <>Send Message <Send className="ml-2 h-4 w-4" /></>}
         </Button>
     );
 }
 
 export default function ContactSection() {
-    const initialState = { message: "", errors: {} };
+    const initialState :FormState={ message: "", errors: {} };
     const [state, dispatch] = useFormState(submitContactForm, initialState);
     const { toast } = useToast();
     const formRef = useRef<HTMLFormElement>(null);
