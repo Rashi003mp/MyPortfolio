@@ -28,22 +28,13 @@ export const projects = [
     {
         id: 'proj1',
         title: 'E-commerce Platform',
-        description: 'A full-featured e-commerce platform built with ASP.NET Core for the backend and React for the frontend. Includes product management, user authentication, and a shopping cart.',
-        tech: ['ASP.NET Core', 'React', 'SQL Server', 'Redux'],
+        description: "An academic e-commerce project built with React and JSON Server, featuring product management, user authentication, shopping cart, wishlist, and order placement.",
+        tech: [ 'React', 'Tailwind', 'Redux'],
         image: '1',
         githubUrl: 'https://github.com',
         liveUrl: '#',
     },
-    {
-        id: 'proj2',
-        title: 'Task Management API',
-        description: 'A RESTful API for a task management application. Users can create, read, update, and delete tasks and projects. Secured with JWT authentication.',
-        tech: ['.NET', 'C#', 'SQL', 'JWT'],
-        image: '2',
-        githubUrl: 'https://github.com',
-        liveUrl: null,
-    },
-    {
+       {
         id: 'proj3',
         title: 'Personal Portfolio Website',
         description: 'A responsive personal portfolio website to showcase skills and projects. Built with Next.js and styled with Tailwind CSS.',
@@ -52,42 +43,26 @@ export const projects = [
         githubUrl: 'https://github.com',
         liveUrl: '#',
     },
-    {
-        id: 'proj4',
-        title: 'Inventory Management System',
-        description: 'A desktop application for managing inventory, suppliers, and orders. Developed using Windows Forms and connected to a SQL database.',
-        tech: ['.NET', 'C#', 'SQL'],
-        image: '4',
-        githubUrl: 'https://github.com',
-        liveUrl: null,
-    }
+    
 ];
 
 export const githubActivity = [
     {
-        repo: 'muhammed-rashid/ecommerce-platform',
-        commit: 'feat: Implement JWT authentication middleware',
+        repo: 'https://github.com/Rashi003mp/jenogram',
+        commit: 'feat: Frontend Completed',
         time: '2 hours ago',
     },
+    
     {
-        repo: 'muhammed-rashid/task-manager-api',
-        commit: 'fix: Correct pagination logic in task controller',
-        time: '1 day ago',
-    },
-    {
-        repo: 'muhammed-rashid/portfolio-nextjs',
+        repo: 'https://github.com/Rashi003mp/MyPortfolio',
         commit: 'chore: Update dependencies and refactor layout',
         time: '3 days ago',
     },
-    {
-        repo: 'muhammed-rashid/ecommerce-platform',
-        commit: 'docs: Add API documentation for products endpoint',
-        time: '5 days ago',
-    }
+    
 ];
 
 export const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com', icon: Github },
-    { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin },
-    { name: 'Email', url: 'mailto:muhammed.rashid@example.com', icon: Mail },
+    { name: 'GitHub', url: 'https://github.com/Rashi003mp', icon: Github },
+    { name: 'LinkedIn', url: 'www.linkedin.com/in/rashid-rashi', icon: Linkedin },
+    { name: 'Email', url: 'mailto:muhammedrashidr222@gmail.com', icon: Mail },
 ];

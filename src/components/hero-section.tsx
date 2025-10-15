@@ -33,7 +33,7 @@ export default function HeroSection() {
                     </Button>
                 </div>
             </div>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
                 {heroImage && (
                     <Image
                         src={heroImage.imageUrl}
@@ -45,7 +45,7 @@ export default function HeroSection() {
                         priority
                     />
                 )}
-            </div>
+            </div> */}
         </section>
     );
 }
