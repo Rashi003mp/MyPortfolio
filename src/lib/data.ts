@@ -31,8 +31,8 @@ export const projects = [
         description: "An academic e-commerce project built with React and JSON Server, featuring product management, user authentication, shopping cart, wishlist, and order placement.",
         tech: [ 'React', 'Tailwind', 'Redux'],
         image: '1',
-        githubUrl: 'https://github.com',
-        liveUrl: '#',
+        githubUrl: 'https://github.com/Rashi003mp/jenogram',
+        liveUrl: 'https://jeanogram.vercel.app/',
     },
        {
         id: 'proj3',
@@ -40,8 +40,8 @@ export const projects = [
         description: 'A responsive personal portfolio website to showcase skills and projects. Built with Next.js and styled with Tailwind CSS.',
         tech: ['React', 'Next.js', 'Tailwind CSS'],
         image: '3',
-        githubUrl: 'https://github.com',
-        liveUrl: '#',
+        githubUrl: 'https://github.com/Rashi003mp/MyPortfolio',
+        liveUrl: 'https://rashid-mp.vercel.app/',
     },
     
 ];
