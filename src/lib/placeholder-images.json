@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Professional portrait of a developer at a desk.",
+      "imageUrl": "https://picsum.photos/seed/hero/500/500",
+      "imageHint": "developer portrait"
+    },
+    {
+      "id": "1",
+      "description": "Abstract representation of an e-commerce platform.",
+      "imageUrl": "https://picsum.photos/seed/proj1/600/400",
+      "imageHint": "e-commerce code"
+    },
+    {
+      "id": "2",
+      "description": "Abstract representation of a task management API.",
+      "imageUrl": "https://picsum.photos/seed/proj2/600/400",
+      "imageHint": "api code"
+    },
+    {
+      "id": "3",
+      "description": "Abstract representation of a portfolio website.",
+      "imageUrl": "https://picsum.photos/seed/proj3/600/400",
+      "imageHint": "portfolio design"
+    },
+    {
+      "id": "4",
+      "description": "Abstract representation of an inventory system.",
+      "imageUrl": "https://picsum.photos/seed/proj4/600/400",
+      "imageHint": "inventory management"
+    }
+  ]
 }
