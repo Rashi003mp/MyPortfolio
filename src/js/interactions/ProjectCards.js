@@ -45,7 +45,8 @@ class ProjectCards {
             opacity: 0,
             duration: 0.8,
             stagger: 0.15,
-            ease: 'power2.out'
+            ease: 'power2.out',
+            immediateRender: false  // THIS FIXES THE ISSUE - prevents hiding cards before trigger fires
         });
     }
 

@@ -52,14 +52,14 @@ void main() {
   // Subtle variation based on scroll
   noise += scrollProgress * 0.1;
   
-  // Base colors - deep black with subtle grey highlights
-  vec3 colorDark = vec3(0.02, 0.02, 0.02);
-  vec3 colorMid = vec3(0.06, 0.06, 0.06);
-  vec3 colorLight = vec3(0.1, 0.1, 0.1);
+  // Base colors - Vintage Archive parchment tones
+  vec3 colorDark = vec3(0.92, 0.90, 0.84);  // Antique Parchment
+  vec3 colorMid = vec3(0.88, 0.86, 0.78);   // Faded Document
+  vec3 colorLight = vec3(0.96, 0.95, 0.92); // Bright Vellum
   
   // Mix based on noise
   vec3 color = mix(colorDark, colorMid, smoothstep(0.3, 0.5, noise));
-  color = mix(color, colorLight, smoothstep(0.6, 0.8, noise) * 0.3);
+  color = mix(color, colorLight, smoothstep(0.6, 0.8, noise) * 0.08);
   
   // Subtle vignette
   float vignette = 1.0 - length(uv - 0.5) * 0.5;

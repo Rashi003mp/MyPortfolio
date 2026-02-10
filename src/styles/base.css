@@ -27,12 +27,18 @@ body {
     color: var(--color-text-primary);
     background-color: var(--color-bg-primary);
     overflow-x: hidden;
+    color-scheme: light;
 }
 
 /* Selection — Muted yellow accent */
 ::selection {
     background-color: var(--color-accent);
     color: var(--color-bg-primary);
+}
+
+/* Keyword Highlight — Amber accent */
+.keyword {
+    color: var(--color-accent);
 }
 
 /* Focus styles */
@@ -162,7 +168,7 @@ p {
 .preloader__bar {
     width: 0%;
     height: 100%;
-    background: var(--color-text-primary);
+    background: var(--color-accent);
     transition: width var(--duration-fast) var(--ease-out-expo);
 }
 
@@ -309,13 +315,14 @@ p {
 .hero__scroll-indicator {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: var(--space-3);
     color: var(--color-text-muted);
     font-size: var(--text-sm);
     letter-spacing: var(--tracking-wider);
     text-transform: uppercase;
-    margin-top: var(--space-20);
+    margin: var(--space-12) auto 0;
+    width: fit-content;
 }
 
 .hero__scroll-arrow {
