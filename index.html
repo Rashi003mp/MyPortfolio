@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative Developer Portfolio — WebGL, Motion Design, Interactive Experiences">
+  <meta name="theme-color" content="#F5F1E8">
+
+  <title>Portfolio — Creative Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__content">
+      <div class="preloader__logo">P</div>
+      <div class="preloader__progress">
+        <div class="preloader__bar"></div>
+      </div>
+      <div class="preloader__text">Loading Experience</div>
+    </div>
+  </div>
+
+  <!-- WebGL Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- Right Side Navigation -->
+  <nav class="side-nav" id="side-nav">
+    <a href="#hero" class="side-nav__item active" data-section="hero">
+      <span class="side-nav__line"></span>
+      <span class="side-nav__tooltip">Home</span>
+    </a>
+    <a href="#journey" class="side-nav__item" data-section="journey">
+      <span class="side-nav__line"></span>
+      <span class="side-nav__tooltip">Journey</span>
+    </a>
+    <a href="#projects" class="side-nav__item" data-section="projects">
+      <span class="side-nav__line"></span>
+      <span class="side-nav__tooltip">Projects</span>
+    </a>
+    <a href="#about" class="side-nav__item" data-section="about">
+      <span class="side-nav__line"></span>
+      <span class="side-nav__tooltip">About</span>
+    </a>
+    <a href="#social" class="side-nav__item" data-section="social">
+      <span class="side-nav__line"></span>
+      <span class="side-nav__tooltip">Social</span>
+    </a>
+    <a href="#contact" class="side-nav__item" data-section="contact">
+      <span class="side-nav__line"></span>
+      <span class="side-nav__tooltip">Contact</span>
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" data-scroll-container>
+
+    <!-- Hero Section -->
+    <section class="section section--hero" id="hero" data-section="hero">
+      <!-- Logo -->
+      <a href="#" class="hero-logo">
+        <span class="hero-logo__top">MUHAMMED</span>
+        <span class="hero-logo__bottom">RASHID</span>
+      </a>
+
+      <div class="hero__content">
+        <h1 class="hero-headline">
+          <span class="hero-headline__line">FULL-STACK</span>
+          <span class="hero-headline__line"><span class="hero-headline__accent">.NET + REACT</span> DEVELOPER</span>
+          <span class="hero-headline__line">CRAFTING <span class="hero-headline__accent">APIS</span>,</span>
+          <span class="hero-headline__line"><span class="hero-headline__accent">ARCHITECTURES</span>,</span>
+          <span class="hero-headline__line">AND INTERACTIVE</span>
+          <span class="hero-headline__line">USER <span class="hero-headline__accent">EXPERIENCES</span></span>
+        </h1>
+
+        <div class="hero__scroll-indicator" data-animate="fade">
+          <span>Scroll to explore</span>
+          <div class="hero__scroll-arrow"></div>
+        </div>
+      </div>
+      <div class="hero__background" data-parallax="0.3"></div>
+    </section>
+
+    <!-- Developer Journey Section -->
+    <section class="section section--journey" id="journey" data-section="journey">
+      <div class="journey">
+        <header class="journey__header">
+          <span class="journey__label">THE PATH</span>
+          <h2 class="journey__title">DEVELOPER JOURNEY</h2>
+        </header>
+
+        <div class="journey__timeline">
+          <!-- Stage 1: Foundations -->
+          <article class="journey-stage journey-stage--1" data-journey-stage="1">
+            <div class="journey-stage__marker">01</div>
+            <div class="journey-stage__content">
+              <h3 class="journey-stage__title">FOUNDATIONS</h3>
+              <div class="journey-stage__stack">HTML · CSS · JAVASCRIPT</div>
+              <p class="journey-stage__desc">Learning structure, layout, and the web platform. Building the raw
+                fundamentals of modern development.</p>
+            </div>
+          </article>
+
+          <!-- Stage 2: Frontend Engineering -->
+          <article class="journey-stage journey-stage--2" data-journey-stage="2">
+            <div class="journey-stage__marker">02</div>
+            <div class="journey-stage__content">
+              <h3 class="journey-stage__title">FRONTEND ENGINEERING</h3>
+              <div class="journey-stage__stack">MODERN JS · REACT · UI LOGIC · MOTION</div>
+              <p class="journey-stage__desc">Component thinking, interactive interfaces, and motion awareness. Crafting
+                experiences users remember.</p>
+            </div>
+          </article>
+
+          <!-- Stage 3: Backend & APIs -->
+          <article class="journey-stage journey-stage--3" data-journey-stage="3">
+            <div class="journey-stage__marker">03</div>
+            <div class="journey-stage__content">
+              <h3 class="journey-stage__title">BACKEND & APIS</h3>
+              <div class="journey-stage__stack">.NET · ASP.NET CORE · REST · AUTH</div>
+              <p class="journey-stage__desc">Server-side logic, authentication, authorization, and data flow. Building
+                systems that scale.</p>
+            </div>
+          </article>
+
+          <!-- Stage 4: Full-Stack & Architecture -->
+          <article class="journey-stage journey-stage--4" data-journey-stage="4">
+            <div class="journey-stage__marker">04</div>
+            <div class="journey-stage__content">
+              <h3 class="journey-stage__title">FULL-STACK & ARCHITECTURE</h3>
+              <div class="journey-stage__stack">CLEAN ARCHITECTURE · EF CORE · SQL · PRODUCTION</div>
+              <p class="journey-stage__desc">Enterprise-grade systems, scalable architecture, and production thinking.
+                From code to deployment.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Progression Line -->
+        <div class="journey__progression">
+          <span>HTML → CSS → JavaScript → Interactive UI → ASP.NET Core APIs → Clean Architecture & Production
+            Systems</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section--projects" id="projects" data-section="projects">
+      <div class="projects">
+        <header class="projects__header">
+          <span class="projects__label">THE WORK</span>
+          <h2 class="projects__title">SELECTED PROJECTS</h2>
+        </header>
+
+        <div class="projects__grid">
+          <!-- Project Card 1 -->
+          <article class="game-card" data-project="1">
+            <div class="game-card__inner">
+              <div class="game-card__content">
+                <div class="game-card__header">
+                  <span class="game-card__category">BACKEND</span>
+                </div>
+                <h3 class="game-card__title">CPMS</h3>
+                <h4 class="game-card__subtitle">SYSTEM SPECS</h4>
+                <p class="game-card__desc">Construction Project Management System built with clean architecture and
+                  modern .NET stack.</p>
+                <div class="game-card__tech">
+                  <span class="game-card__badge">.NET 8</span>
+                  <span class="game-card__badge">EF CORE</span>
+                  <span class="game-card__badge">DAPPER</span>
+                  <span class="game-card__badge">SQL SERVER</span>
+                </div>
+                <a href="https://github.com/Rashi003mp/CPMS.git" target="_blank" class="game-card__action">
+                  <span>View Project</span>
+                  <span class="game-card__arrow">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="game-card" data-project="2">
+            <div class="game-card__inner">
+              <div class="game-card__content">
+                <div class="game-card__header">
+                  <span class="game-card__category">FULL-STACK</span>
+                </div>
+                <h3 class="game-card__title">E-Commerce Platform</h3>
+                <h4 class="game-card__subtitle">SYSTEM SPECS</h4>
+                <p class="game-card__desc">Full-stack e-commerce application built using a monolithic architecture
+                  with secure APIs, product management, cart functionality, and database-driven workflows.</p>
+                <div class="game-card__tech">
+                  <span class="game-card__badge">ASP.NET CORE WEB API</span>
+                  <span class="game-card__badge">EF CORE</span>
+                  <span class="game-card__badge">SQL SERVER</span>
+                  <span class="game-card__badge">REACT</span>
+                </div>
+                <div class="game-card__action">
+                  <span>View Project</span>
+                  <span class="game-card__arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section — System Profile -->
+    <section class="section section--about" id="about" data-section="about">
+      <div class="about-profile">
+        <header class="about-profile__header">
+          <span class="about-profile__label">IDENTITY // PROFILE</span>
+          <h2 class="about-profile__title">TECHNICAL SPECIFICATIONS</h2>
+        </header>
+
+        <div class="about-profile__grid">
+          <!-- Bio Column -->
+          <div class="about-profile__bio">
+            <h3 class="about-profile__subtitle">SYSTEM NARRATIVE</h3>
+            <p class="about-profile__text">
+              I am a Full-Stack .NET Developer with a specialized focus on building high-performance,
+              scalable architectures and immersive digital experiences. My approach combines the rigor
+              of enterprise engineering with the fluidity of creative motion design.
+            </p>
+            <p class="about-profile__text">
+              From microservices to unique WebGL interfaces, I bridge the gap between technical
+              complexity and user-centric design, ensuring every system is as robust as it is intuitive.
+            </p>
+            <div class="about-profile__tags">
+              <span class="about-tag">#ARCHITECT</span>
+              <span class="about-tag">#ENGINEER</span>
+              <span class="about-tag">#CREATIVE</span>
+            </div>
+          </div>
+
+          <!-- Attributes Column -->
+          <div class="about-profile__stats">
+            <h3 class="about-profile__subtitle">CORE ATTRIBUTES</h3>
+
+            <!-- Attribute: Backend -->
+            <div class="attribute" data-attribute="backend">
+              <div class="attribute__header">
+                <span class="attribute__name">BACKEND // ARCHITECTURE</span>
+                <span class="attribute__value" data-value="95">0%</span>
+              </div>
+              <div class="attribute__bar">
+                <div class="attribute__fill"></div>
+              </div>
+            </div>
+
+            <!-- Attribute: Systems -->
+            <div class="attribute" data-attribute="systems">
+              <div class="attribute__header">
+                <span class="attribute__name">SCALABLE SYSTEMS</span>
+                <span class="attribute__value" data-value="90">0%</span>
+              </div>
+              <div class="attribute__bar">
+                <div class="attribute__fill"></div>
+              </div>
+            </div>
+
+            <!-- Attribute: Frontend -->
+            <div class="attribute" data-attribute="frontend">
+              <div class="attribute__header">
+                <span class="attribute__name">FRONTEND ENGINEERING</span>
+                <span class="attribute__value" data-value="85">0%</span>
+              </div>
+              <div class="attribute__bar">
+                <div class="attribute__fill"></div>
+              </div>
+            </div>
+
+            <!-- Attribute: Creative -->
+            <div class="attribute" data-attribute="creative">
+              <div class="attribute__header">
+                <span class="attribute__name">CREATIVE // MOTION</span>
+                <span class="attribute__value" data-value="80">0%</span>
+              </div>
+              <div class="attribute__bar">
+                <div class="attribute__fill"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Connect Section — Stacked Card Deck -->
+    <section class="section section--social" id="social" data-section="social">
+      <div class="social-connect">
+
+        <!-- Section Header -->
+        <header class="social__header">
+          <span class="social__label">NETWORK // CONNECT</span>
+          <h2 class="social__title">SOCIAL CHANNELS</h2>
+        </header>
+
+        <!-- Stacked Card Deck -->
+        <div class="social__deck">
+          <a href="https://www.linkedin.com/in/muhammed-rashid-full-stack-developer" target="_blank" rel="noopener"
+            class="social-card" data-index="1">
+            <div class="social-card__inner">
+              <span class="social-card__icon">in</span>
+              <div class="social-card__content">
+                <span class="social-card__name">LINKEDIN</span>
+                <span class="social-card__desc">Professional presence</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/Rashi003mp" target="_blank" rel="noopener" class="social-card" data-index="2">
+            <div class="social-card__inner">
+              <span class="social-card__icon">gh</span>
+              <div class="social-card__content">
+                <span class="social-card__name">GITHUB</span>
+                <span class="social-card__desc">Code & APIs</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/rashii_mhd_?igsh=aTQ0bmVhbDUzajE1" target="_blank" rel="noopener"
+            class="social-card" data-index="3">
+            <div class="social-card__inner">
+              <span class="social-card__icon">IG</span>
+              <div class="social-card__content">
+                <span class="social-card__name">INSTAGRAM</span>
+                <span class="social-card__desc">Visual stories</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="mailto:muhammedrashidr222@gmail.com" class="social-card" data-index="4">
+            <div class="social-card__inner">
+              <span class="social-card__icon">@</span>
+              <div class="social-card__content">
+                <span class="social-card__name">EMAIL</span>
+                <span class="social-card__desc">Direct connection</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--contact" id="contact" data-section="contact">
+      <div class="contact__container">
+        <header class="contact__header">
+          <span class="contact__label">GET IN TOUCH</span>
+          <h2 class="contact__title">Let's Work Together</h2>
+          <p class="contact__subtitle">Have a project in mind? Fill out the form below and I'll get back to you as soon
+            as possible.</p>
+        </header>
+
+        <div class="contact__content">
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com"
+                  required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry" />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" name="message" class="form-textarea" rows="6"
+                placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit" id="submit-btn">
+              <span class="form-submit__text">Send Message</span>
+              <span class="form-submit__arrow">→</span>
+              <span class="form-submit__loader"></span>
+            </button>
+
+            <!-- Status Messages -->
+            <div class="form-status" id="form-status">
+              <p class="form-status__message"></p>
+            </div>
+          </form>
+
+          <!-- Quick Contact Info -->
+          <div class="contact__info">
+            <div class="contact__info-item">
+              <h3 class="contact__info-title">Email</h3>
+              <a href="mailto:muhammedrashidr222@gmail.com" class="contact__info-link">muhammedrashidr222@gmail.com</a>
+            </div>
+            <div class="contact__info-item">
+              <h3 class="contact__info-title">Connect</h3>
+              <div class="contact__social-links">
+                <a href="https://github.com/Rashi003mp" class="contact__social-link" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/muhammed-rashid-full-stack-developer" class="contact__social-link"
+                  target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/rashii_mhd_?igsh=aTQ0bmVhbDUzajE1" class="contact__social-link"
+                  target="_blank">Instagram</a>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <h3 class="contact__info-title">Download</h3>
+              <a href="/cv/Rashid Mp-Full Stack Dev(.NET &REACT) - Copy.pdf" class="contact__cv-download" download>
+                <span class="contact__cv-icon">↓</span>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__text">
+          // Every bug<br>
+          // is a lesson<br>
+          // written twice.
+        </p>
+      </footer>
+    </section>
+
+  </main>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

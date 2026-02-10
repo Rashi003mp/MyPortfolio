@@ -1,0 +1,214 @@
+/* ==========================================================================
+   CSS Design System — Variables & Tokens — Rhumb Studio Light Editorial Style
+   ========================================================================== */
+
+:root {
+  /* -------------------------------------------------------------------------
+     Color Palette — Rhumb Studio Light Editorial Style
+     Cream/beige dominant, extreme minimalism, black text with gold yellow accent
+     ------------------------------------------------------------------------- */
+
+  /* Base backgrounds — Cream/beige editorial */
+  --color-bg-primary: #F5F1E8;
+  --color-bg-secondary: #EBE7DC;
+  --color-bg-tertiary: #F9F6F0;
+  --color-bg-elevated: #FFFFFF;
+
+  /* Text colors — Black to soft gray */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #5A5A5A;
+  --color-text-muted: #8A8A8A;
+  --color-text-inverse: #FAFAFA;
+
+  /* Accent colors — Gold yellow (for CTA only) */
+  --color-accent: #D4AF37;
+  --color-accent-light: #E0C45C;
+  --color-accent-dark: #B8941F;
+  --color-accent-glow: rgba(212, 175, 55, 0.2);
+  --color-accent-subtle: rgba(212, 175, 55, 0.1);
+
+  /* Grayscale highlight */
+  --color-lime-off: #D4AF37;
+
+  /* Undertones for depth */
+  --color-accent-deep: #B8941F;
+  --color-accent-shadow: #9A7A18;
+
+  /* Gradients — Subtle, minimal */
+  --gradient-primary: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+  --gradient-dark: linear-gradient(180deg, #EBE7DC 0%, #F5F1E8 100%);
+  --gradient-radial: radial-gradient(ellipse at center, #F9F6F0 0%, #F5F1E8 70%);
+  --gradient-glow: radial-gradient(circle, var(--color-accent-glow) 0%, transparent 70%);
+
+  /* Overlay colors */
+  --color-overlay: rgba(245, 241, 232, 0.9);
+  --color-overlay-light: rgba(245, 241, 232, 0.6);
+
+  /* Border colors — Subtle dark lines on light */
+  --color-border: rgba(26, 26, 26, 0.1);
+  --color-border-hover: rgba(26, 26, 26, 0.2);
+  --color-border-accent: rgba(212, 175, 55, 0.3);
+
+  /* -------------------------------------------------------------------------
+     Typography — Editorial Bold System
+     ------------------------------------------------------------------------- */
+
+  --font-display: 'Space Grotesk', 'Helvetica Neue', sans-serif;
+  --font-body: 'Inter', 'Helvetica Neue', sans-serif;
+
+  /* Type scale — Editorial large headings */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+  --text-xl: clamp(1.375rem, 1.2rem + 0.75vw, 1.625rem);
+  --text-2xl: clamp(1.75rem, 1.4rem + 1.5vw, 2.25rem);
+  --text-3xl: clamp(2.25rem, 1.8rem + 2.5vw, 3.5rem);
+  --text-4xl: clamp(3rem, 2.2rem + 3.5vw, 5rem);
+  --text-5xl: clamp(4rem, 2.5rem + 5vw, 7rem);
+  --text-6xl: clamp(5rem, 3rem + 7.5vw, 10rem);
+
+  /* Font weights — Bold editorial */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 800;
+
+  /* Line heights — Tight editorial */
+  --leading-none: 0.95;
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* Letter spacing — Uppercase tracking */
+  --tracking-tight: -0.03em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.03em;
+  --tracking-wider: 0.08em;
+  --tracking-widest: 0.15em;
+
+  /* -------------------------------------------------------------------------
+     Spacing System — Generous negative space
+     ------------------------------------------------------------------------- */
+
+  --space-1: 0.25rem;
+  /* 4px */
+  --space-2: 0.5rem;
+  /* 8px */
+  --space-3: 0.75rem;
+  /* 12px */
+  --space-4: 1rem;
+  /* 16px */
+  --space-5: 1.5rem;
+  /* 24px */
+  --space-6: 2rem;
+  /* 32px */
+  --space-8: 2.5rem;
+  /* 40px */
+  --space-10: 3rem;
+  /* 48px */
+  --space-12: 4rem;
+  /* 64px */
+  --space-16: 6rem;
+  /* 96px */
+  --space-20: 8rem;
+  /* 128px */
+  --space-24: 10rem;
+  /* 160px */
+  --space-32: 12rem;
+  /* 192px */
+  --space-40: 16rem;
+  /* 256px */
+  --space-48: 20rem;
+  /* 320px */
+
+  /* Container widths — Narrow editorial */
+  --container-sm: 600px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-2xl: 1320px;
+
+  /* Section padding — Extra generous */
+  --section-padding-x: clamp(2rem, 8vw, 8rem);
+  --section-padding-y: clamp(6rem, 15vh, 12rem);
+
+  /* -------------------------------------------------------------------------
+     Motion & Easing
+     ------------------------------------------------------------------------- */
+
+  /* Durations */
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 600ms;
+  --duration-slower: 800ms;
+  --duration-slowest: 1200ms;
+
+  /* Easing curves — Calm, smooth */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-in-expo: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* Default transition */
+  --transition-fast: var(--duration-fast) var(--ease-out-expo);
+  --transition-normal: var(--duration-normal) var(--ease-out-expo);
+  --transition-slow: var(--duration-slow) var(--ease-out-expo);
+
+  /* -------------------------------------------------------------------------
+     Z-Index Layers
+     ------------------------------------------------------------------------- */
+
+  --z-below: -1;
+  --z-base: 0;
+  --z-above: 10;
+  --z-nav: 100;
+  --z-modal: 200;
+  --z-cursor: 500;
+  --z-preloader: 1000;
+
+  /* -------------------------------------------------------------------------
+     Effects & Shadows — Light editorial with subtle glows
+     ------------------------------------------------------------------------- */
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 40px var(--color-accent-glow);
+
+  --blur-sm: 4px;
+  --blur-md: 8px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+}
+
+/* Light mode editorial theme — Rhumb Studio style */
+:root {
+  color-scheme: light;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 0ms;
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+    --duration-slower: 0ms;
+    --duration-slowest: 0ms;
+  }
+}
