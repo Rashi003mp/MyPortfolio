@@ -290,11 +290,11 @@
     background: var(--color-bg-elevated);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 2px solid var(--color-border);
+    border: 3px solid var(--color-border-hover);
     border-radius: var(--radius-lg);
     padding: var(--space-10);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     opacity: 1;
     visibility: visible;
